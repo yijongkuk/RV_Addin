@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>ProjectSetupAddin</AssemblyName>
+    <RootNamespace>ProjectSetupAddin</RootNamespace>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RevitAPI">
+      <HintPath>$(APPDATA)\Autodesk\REVIT\Addins\2023\RevitAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>$(APPDATA)\Autodesk\REVIT\Addins\2023\RevitAPIUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
