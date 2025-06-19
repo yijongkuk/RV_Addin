@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>ProjectSetupAddin</Name>
+    <Assembly>$(AppData)\Autodesk\REVIT\Addins\2024\ProjectSetupAddin.dll</Assembly>
+    <AddInId>89B5BC34-4E96-4F7A-9659-88550CC29EF0</AddInId>
+    <FullClassName>ProjectSetupAddin.SetProjectDefaults</FullClassName>
+    <VendorId>COMPANY</VendorId>
+    <VendorDescription>Sample Project Setup Addin</VendorDescription>
+  </AddIn>
+</RevitAddIns>
