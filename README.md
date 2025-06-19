@@ -7,9 +7,12 @@ The add-in demonstrates how to:
 - Set basic `ProjectInfo` parameters such as project name and number.
 - Create a sample grid in the active document.
 
-The implementation in `SetProjectDefaults.cs` should be extended to gather
-site scale information (site area, floor counts, grid spacing, grid counts, etc.)
-from the user and apply those values to the project.
+The add-in now prompts for:
+
+- Number of levels and the height between them (meters).
+- Grid counts and spacing for the X and Y directions (meters).
+
+These values are used to create levels and a simple grid system.
 
 ## Building
 
@@ -41,5 +44,5 @@ Update `PathToDll` with the actual path to the compiled DLL.
 ## Usage
 
 After installing, launch Revit and run the `ProjectSetupAddin` command from the
-Add-Ins tab. The current implementation simply sets example values. Extend the
-`Execute` method to configure the project based on your site data.
+Add-Ins tab. You will be prompted for level and grid parameters. The add-in
+creates the requested number of levels and grids using the spacing provided.
